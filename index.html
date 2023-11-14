@@ -1,0 +1,73 @@
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pizza Order Form</title>
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/script.js"></script>
+</head>
+
+<body>
+  <!-- Create order form with various fields as mentioned in README file -->
+  <header>
+    <div class="header-div">
+      <h2>Veggie Pizza Order</h2>
+    </div>
+  </header>
+  <main>
+    <div class="formbody">
+      <h2>Fill up order Details here</h2>
+      <form onsubmit="addOrder(event)">
+
+        <label for="order-id"><b>Order Id:</b></label><br>
+        <input type="text" id="order-id" name="order-id" pattern="[0-9]+" class="boxes" required><br>
+        <label for="customer-name"><b>Customer Name:</b></label><br>
+        <input type="text" id="customer-name" name="customer-name" pattern="[a-zA-Z ]+" class="boxes" required><br>
+        <label for="customer-email"><b>Email Id:</b></label><br>
+        <input type="email" id="customer-email" name="customer-email" class="boxes" required><br>
+        <label for="contact-number"><b>Contact Number:</b></label><br>
+        <input type="tel" id="contact-number" name="contact-number" pattern="[0-9]+" class="boxes" required><br>
+        <label for="order-date"><b>Order Date:</b></label><br>
+        <input type="date" id="order-date" name="order-date" required class="boxes"><br>
+        <label for="address"><b>Address:</b></label><br>
+        <textarea id="address" name="address" required class="boxes" style="height: 10%;"></textarea><br>
+        <label for="add-order"><b>Add Order</b></label>
+        <button id="add-order" name="add-order"onclick="addDetils()"  type="submit">+</button>
+
+      </form>
+
+
+
+      <table>
+        <thead>
+            <tr>
+                <th>Category name</th>
+                
+                <th>Item name</th>
+
+                <th>price</th>
+
+                <th>Quality</th>
+
+                <th>Amount</th>
+            </tr>
+        </thead>
+        <tbody id="mycontent">
+
+        </tbody>
+    </table>
+
+
+      <p style="display: inline-block;">Total amount: $</p>
+      <input type="number" value="0" id="total-amount" name="total-amount" class="boxes" required >
+      <button id="order-now" id="total-bill-amount"; style="display: block;" onclick="submitOrder(event)">Order Now</button>
+    </div>
+  
+  </main>
+
+
+</body>
+
+</html>

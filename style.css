@@ -1,0 +1,66 @@
+Write style code here
+body{
+    margin: 0;
+    font-family:sans-serif;
+}
+h2{
+    color: rgb(155, 227, 241);
+    padding: 10px;
+}
+header{
+    background-color: rgb(11, 11, 156);
+    height:50px;
+    
+}
+
+.formbody{
+    border: 1px solid black;
+    border-radius: 10px;
+    box-shadow: 0px 2px 5px rgb(108, 65, 65);
+    margin: 20px 10%;
+    padding-left: 15px;
+    padding-right: 40px;
+    padding-bottom: 30px;
+    
+}
+table {
+    border-collapse: collapse;
+    
+  }
+  .horizontal{
+    width:440%;
+    margin:0;
+  }
+  
+
+  td,th{
+    width: 23.5%;
+    padding-right: 10px;
+    text-align: left;
+  }
+
+  .boxes{
+    margin-bottom:10px;
+    border:none;
+    border-bottom: 1px solid black;
+    width: 100%;
+    
+  }
+  .input-order{
+    width: 100%;
+    display: flex;
+    flex-shrink: 1;
+    border: none;
+
+  }
+  #add-order{
+    border-radius: 10px;
+  }
+ 
+  #order-now{
+    color: white;
+    background-color: rgb(5, 54, 110);
+
+    padding: 2px 15px;
+    border-radius: 4px;
+  }
